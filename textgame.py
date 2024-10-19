@@ -1,6 +1,6 @@
 # TextBasedGame.py
 # This script is a text-based adventure game where the player collects safe foods while avoiding peanuts.
-# Author: [Your Full Name]
+# Author: [Andrianna Mitchell]
 
 
 # Game dictionary to store room navigation and items
@@ -45,11 +45,13 @@ rooms = {
     }
 }
 
+
 # List of all safe foods
 safe_foods = [
     'Baby Formula', 'Berries', 'Apple',
     'Water', 'Rice Crackers', 'Veggies'
 ]
+
 
 # Function to display game instructions
 def show_instructions():
@@ -60,6 +62,7 @@ def show_instructions():
     print("To collect an item, type 'pick'.")
     print("Good luck!\n")
 
+
 # Function to display the player's status
 def display_status(current_room, inventory):
     """Display the player's current status."""
@@ -67,6 +70,7 @@ def display_status(current_room, inventory):
     print(f"Inventory: {inventory}")
     print(f"You see: {rooms[current_room]['items']}")
     print("----------------------")
+
 
 # Main game function
 def main():
@@ -111,6 +115,7 @@ def main():
 
     if set(safe_foods).issubset(inventory):  # Check if all safe foods are collected
         print("Congratulations! You collected all safe foods.")
+
 
 # Run the game
 if __name__ == "__main__":
