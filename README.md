@@ -1,6 +1,3 @@
-Here is a sample `README.md` formatted for GitHub:
-
-```markdown
 # Peanut Allergy Adventure Game
 
 ## Description
